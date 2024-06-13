@@ -1,0 +1,445 @@
+body {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  background: url("background picture 1 (code).jpg") no-repeat center center /
+    cover;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.centered-text {
+  z-index: 2;
+}
+
+.centered-text h1 {
+  font-size: 3.5em;
+  margin: 0;
+  color: #f39c12;
+}
+
+.centered-text h2 {
+  font-size: 1.8em;
+  margin: 0;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+nav ul li {
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f39c12;
+  color: #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.why-choose-me {
+  background-color: #1e1e1e;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.why-choose-me h3 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.benefit-item .icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.yellow-icon i {
+  color: #ffd700;
+}
+
+.blue-icon i {
+  color: #007bff;
+}
+
+.red-icon i {
+  color: #ff4136;
+}
+
+.contact-me {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me:hover {
+  background-color: #c0392b;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #333;
+}
+
+.profile {
+  max-width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+
+.skills {
+  max-width: 40%;
+  text-align: center;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.skills h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
+}
+
+.skills li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.my-projects {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.my-projects h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.my-projects p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: auto;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #2980b9;
+}
+
+.my-roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2c3e50;
+}
+
+.my-roadmap .roadmap ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.my-roadmap .roadmap ul li {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.my-roadmap .roadmap ul li.html {
+  background-color: #e34c26;
+  color: white;
+}
+.my-roadmap .roadmap ul li.css {
+  background-color: #2965f1;
+  color: white;
+}
+.my-roadmap .roadmap ul li.javascript {
+  background-color: #f0db4f;
+  color: black;
+}
+.my-roadmap .roadmap ul li.bootstrap {
+  background-color: #563d7c;
+  color: white;
+}
+.my-roadmap .roadmap ul li.git {
+  background-color: #f1502f;
+  color: white;
+}
+.my-roadmap .roadmap ul li.figma {
+  background-color: #0acf83;
+  color: black;
+}
+.my-roadmap .roadmap ul li.next-target {
+  background-color: #444;
+  color: white;
+}
+.my-roadmap .roadmap ul li.react {
+  background-color: #61dbfb;
+  color: black;
+}
+
+#contacts {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#contacts .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#contacts h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contacts p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+#contacts form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#contacts label {
+  text-align: left;
+}
+
+#contacts input,
+#contacts textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contacts button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacts button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  .centered-text h1 {
+    font-size: 2.5em;
+  }
+
+  .centered-text h2 {
+    font-size: 1.4em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .profile,
+  .skills {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .skills ul {
+    text-align: center;
+  }
+
+  .my-roadmap .roadmap ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-roadmap .roadmap ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .centered-text h1 {
+    font-size: 2em;
+  }
+
+  .centered-text h2 {
+    font-size: 1.2em;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .benefit-item {
+    width: 90%;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    max-width: 100%;
+  }
+
+  .skills {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}

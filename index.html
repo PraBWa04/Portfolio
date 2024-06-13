@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L1nfor.dev</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="centered-text">
+        <h1>L1nfor.dev</h1>
+        <h2>Frontend Developer</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li>
+            <a href="https://github.com/PraBWa04" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ivan-matyshchak-b3847b2bb/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="why-choose-me">
+      <div class="container">
+        <h3>Why Choose Me?</h3>
+        <div class="benefits">
+          <div class="benefit-item">
+            <span class="icon yellow-icon"
+              ><i class="bi bi-emoji-smile"></i
+            ></span>
+            <p>My focus is to make projects as user friendly as possible</p>
+          </div>
+          <div class="benefit-item">
+            <span class="icon blue-icon"
+              ><i class="bi bi-lightning-charge"></i
+            ></span>
+            <p>Websites created by me are easy to use and easy to look at</p>
+          </div>
+          <div class="benefit-item">
+            <span class="icon red-icon"><i class="bi bi-bullseye"></i></span>
+            <p>Visual clarity and transparency is my main goal</p>
+          </div>
+        </div>
+        <button class="contact-me">CONTACT ME</button>
+      </div>
+    </section>
+    <section class="about-me" id="about-me">
+      <div class="profile">
+        <img src="MyPicture.jpg" alt="Ivan" class="profile-image" />
+        <p>
+          Hello, my name is Ivan. I studied at the "College of Electronic
+          Devices" and graduated in 2023. Currently, I am studying at "Wroclaw
+          University of Science and Technology". I consider myself a diligent
+          individual, always open to developing proficiency in various
+          programming languages.
+        </p>
+        <p class="learning-duration"></p>
+        <p>
+          I'm trying to commit daily to my GitHub in order to receive the best
+          results.
+        </p>
+      </div>
+      <div class="skills">
+        <h4>Skills</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript - Currently in progress</li>
+          <li>Bootstrap</li>
+          <li>GIT</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </section>
+    <section class="my-projects">
+      <h3>Websites</h3>
+      <p>Here you can find a list of my best projects</p>
+      <div class="projects-container">
+        <div class="project-item">
+          <i class="bi bi-tools project-icon"></i>
+          <h4>Website (Freelance)</h4>
+          <p>Auto tool website</p>
+          <a href="https://auto-tool.com.ua/" class="project-link">LINK</a>
+        </div>
+        <div class="project-item">
+          <i class="bi bi-calculator project-icon"></i>
+          <h4>Calculator</h4>
+          <p>Room area calculating</p>
+          <a
+            href="https://prabwa04.github.io/room-area-calculation/"
+            class="project-link"
+            >LINK</a
+          >
+        </div>
+        <div class="project-item">
+          <i class="bi bi-lightbulb project-icon"></i>
+          <h4>Other Stuff</h4>
+          <p>My other fun projects</p>
+          <a href="https://github.com/PraBWa04" class="project-link"
+            >SEE MORE</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="container">
+        <h3>Contacts</h3>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xleqkblj"
+          method="POST"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p>Email: vmatishchak04@gmail.com</p>
+        <p>Phone: +48 795 394 059</p>
+      </div>
+    </section>
+    <section class="my-roadmap">
+      <div class="roadmap">
+        <ul>
+          <li class="html">HTML</li>
+          <li class="css">CSS</li>
+          <li class="javascript">JavaScript</li>
+          <li class="bootstrap">Bootstrap</li>
+          <li class="git">GIT</li>
+          <li class="figma">Figma</li>
+          <li class="next-target">next target -></li>
+          <li class="react">React</li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
